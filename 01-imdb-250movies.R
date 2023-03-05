@@ -7,7 +7,7 @@ page <- read_html("https://www.imdb.com/chart/top")
 
 # Titles -----------------------------------------------------------------------
 titles <- page %>%
-  html_nodes(".titleColumn a") %>%
+  html_nodes(".titleColumn a") %>% # Use selector gadget to find htmL_node
   html_text()
 
 # Years-------------------------------------------------------------------------
